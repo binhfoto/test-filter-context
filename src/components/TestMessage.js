@@ -8,7 +8,7 @@ export default function TestMessage () {
     let isParent = window.self === window.top;
     return (
         <div className='test-message-container'>
-            <div className='handle-message-container'>
+            <div className='handle-message-container' style={isParent ? {} : {flexDirection: 'row'}}>
                 <SendMessage/>
                 <LogMessage/>
             </div>
