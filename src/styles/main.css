@@ -1,0 +1,49 @@
+.test-message-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 90vh;
+}
+
+.handle-message-container {
+    flex: 1 0;
+}
+
+.web-content-container {
+    flex: 2 auto;
+}
+
+.handle-message-container, .web-content-container {
+    border: 0.01em solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.handle-message-container, .send-message, .log-message, .web-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.send-message textarea, .web-content input {
+    width: 98%;
+}
+
+.log-message div {
+    max-width: 300px;
+}
+
+.log-message .incoming-message {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.log-message .incoming-message:first-child {
+    color: blue;
+} 
+
+iframe {
+    display: block;
+    background: #fff;
+    border: none;         /* Reset default border */
+    height: 800px;        /* Viewport-relative units */
+
+}
