@@ -10,11 +10,6 @@ export default class SendMessage extends Component {
         this._message = {
             setFilterContext: []
         };
-        this.state = {
-            message: {
-                setFilterContext: []
-            }
-        }
     }
 
     placeHolder = {
@@ -34,14 +29,12 @@ export default class SendMessage extends Component {
 
     handleChange = ({jsObject}) => {
         if (jsObject) {
-            //this.setState({message: jsObject});
             this._message = jsObject;
         }
     };
 
     handleSend = () => {
         sendMessage(this._message);
-        //sendMessage(this.state.message);
     };
 
     render() {
